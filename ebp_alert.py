@@ -138,9 +138,9 @@ for name, tk in MARKETS.items():
                 c, p = r.iloc[-1], r.iloc[-2]
                 send(
                     f"{name} - {tf} {'BULL' if d == 1 else 'BEAR'} EBP closed {int(age)} min ago.\n"
-                    f"candle opened {start + clock(name)[1]} {'UTC' if name in CRYPTO else 'NY'}\n"
-                    f"prev O{p.Open:.2f} H{p.High:.2f} L{p.Low:.2f} C{p.Close:.2f}\n"
-                    f"last O{c.Open:.2f} H{c.High:.2f} L{c.Low:.2f} C{c.Close:.2f}"
+                    #f"candle opened {start + clock(name)[1]} {'UTC' if name in CRYPTO else 'NY'}\n"
+                    #f"prev O{p.Open:.2f} H{p.High:.2f} L{p.Low:.2f} C{p.Close:.2f}\n"
+                    #f"last O{c.Open:.2f} H{c.High:.2f} L{c.Low:.2f} C{c.Close:.2f}"
                 )
                 state.append(key)
     except Exception as e:
